@@ -12,3 +12,5 @@ wheels/
 local_syftbox_network
 data
 *.pkl
+.DS_Store
+logs.zip

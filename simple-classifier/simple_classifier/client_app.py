@@ -44,7 +44,7 @@ def train(msg: Message, context: Context):
     # Load the data
     partition_id = context.node_config["partition-id"]
     num_partitions = context.node_config["num-partitions"]
-    X_train, _, y_train, _ = load_data(partition_id, num_partitions)
+    X_train, _, y_train, _ = load_data() #partition_id, num_partitions)
 
     # Ignore convergence failure due to low local epochs
     with warnings.catch_warnings():

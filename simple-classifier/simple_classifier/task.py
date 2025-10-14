@@ -42,7 +42,7 @@ def load_syftbox_dataset() -> tuple:
     train_df = pd.read_csv(data_dir / "train.csv")
     test_df = pd.read_csv(data_dir / "test.csv")
 
-    return dataset_processing(train_df, test_df)
+    return train_df, test_df #dataset_processing(train_df, test_df)
 
 
 def get_model(penalty: str, local_epochs: int):
