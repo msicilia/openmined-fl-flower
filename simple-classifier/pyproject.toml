@@ -48,7 +48,7 @@ address = "<SUPERLINK-ADDRESS>:<PORT>"
 insecure = true
 
 [tool.syft_flwr]
-app_name = "ds@openmined.org_simple-classifier_1760104317"
+app_name = "ds@openmined.org_simple-classifier_1760450407"
 datasites = [
     "1@openmined.org",
     "2@openmined.org",

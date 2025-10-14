@@ -41,8 +41,12 @@ def load_syftbox_dataset() -> tuple:
     print(f"Loading dataset from {data_dir}") 
     train_df = pd.read_csv(data_dir / "train.csv")
     test_df = pd.read_csv(data_dir / "test.csv")
-
-    return train_df, test_df #dataset_processing(train_df, test_df)
+    X_train = train_df.drop(columns=["label"]).values
+    y_train = train_df["label"].values
+    X_test = test_df.drop(columns=["label"]).values
+    y_test = test_df["label"].values
+    print(f"Train shape: {X_train.shape}, Test shape: {X_test.shape}")
+    return X_train, X_test, y_train, y_test #dataset_processing(train_df, test_df)
 
 
 def get_model(penalty: str, local_epochs: int):
