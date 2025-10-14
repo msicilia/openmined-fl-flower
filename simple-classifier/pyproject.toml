@@ -15,7 +15,7 @@ dependencies = [
     "scikit-learn>=1.6.1",
     "syft-flwr>=0.2.1",
     "pandas>=2.3.3",
-    "syft_flwr==0.2.1",
+    "syft_flwr==0.4.0",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -48,7 +48,7 @@ address = "<SUPERLINK-ADDRESS>:<PORT>"
 insecure = true
 
 [tool.syft_flwr]
-app_name = "ds@openmined.org_simple-classifier_1760450407"
+app_name = "ds@openmined.org_simple-classifier_1760452818"
 datasites = [
     "1@openmined.org",
     "2@openmined.org",
