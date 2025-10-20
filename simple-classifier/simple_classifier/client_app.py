@@ -54,7 +54,7 @@ def train(msg: Message, context: Context):
 
     # Let's compute train loss
     y_train_pred_proba = model.predict_proba(X_train)
-    train_logloss = log_loss(y_train, y_train_pred_proba)
+    train_logloss = log_loss(y_train, y_train_pred_proba, labels=[0, 1])
 
     # Construct and return reply Message
     ndarrays = get_model_params(model)
@@ -90,11 +90,14 @@ def evaluate(msg: Message, context: Context):
     y_train_pred = model.predict(X_test)
     y_train_pred_proba = model.predict_proba(X_test)
 
+    # Explicitly specify all possible class labels for metrics
+    all_labels = [0, 1]  # Binary classification
+
     accuracy = accuracy_score(y_test, y_train_pred)
-    loss = log_loss(y_test, y_train_pred_proba)
-    precision = precision_score(y_test, y_train_pred, average="macro", zero_division=0)
-    recall = recall_score(y_test, y_train_pred, average="macro", zero_division=0)
-    f1 = f1_score(y_test, y_train_pred, average="macro", zero_division=0)
+    loss = log_loss(y_test, y_train_pred_proba, labels=all_labels)
+    precision = precision_score(y_test, y_train_pred, labels=all_labels, average="macro", zero_division=0)
+    recall = recall_score(y_test, y_train_pred, labels=all_labels, average="macro", zero_division=0)
+    f1 = f1_score(y_test, y_train_pred, labels=all_labels, average="macro", zero_division=0)
 
     # Construct and return reply Message
     metrics = {

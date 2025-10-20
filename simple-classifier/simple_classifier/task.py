@@ -77,9 +77,9 @@ def set_model_params(model, params):
 
 
 def set_initial_params(model):
-    n_classes = 10  # MNIST has 10 classes
-    n_features = 784  # Number of features in dataset
-    model.classes_ = np.array([i for i in range(10)])
+    n_classes = 2  # Binary classification
+    n_features = 20  # Number of features from make_classification
+    model.classes_ = np.array([i for i in range(n_classes)])
 
     model.coef_ = np.zeros((n_classes, n_features))
     if model.fit_intercept:
