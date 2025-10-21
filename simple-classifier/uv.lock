@@ -469,7 +469,7 @@ wheels = [
 
 [[package]]
 name = "flwr"
-version = "1.22.0"
+version = "1.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -488,9 +488,9 @@ dependencies = [
     { name = "tomli-w" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a4/fa/0589fd29bae9d4c24f652f7e4b499237e17a21e48fb2b6e35ddd3be55380/flwr-1.22.0.tar.gz", hash = "sha256:5d57ca9ed48370870124acec9fc54c182cda83e7067eca82776fd1255b436af3", size = 383745, upload-time = "2025-09-21T19:26:46.301Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/37/fbc52888520db062d0e2b551a9acf568238cdf4170faacf77135fae6a431/flwr-1.21.0.tar.gz", hash = "sha256:ee082b5d02fe8cffcf6f2a3385f6fa09138be900f737a1e42eaa59c38e6c8b4e", size = 366375, upload-time = "2025-09-10T10:02:28.387Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/2d/ed81549fa408296b1664099032075e753f858770b2f98bbe3eb33cd15f75/flwr-1.22.0-py3-none-any.whl", hash = "sha256:c87e0d6befdc51647833c30719bbe19de4ab5e58ab34586c85cb40815b105160", size = 703160, upload-time = "2025-09-21T19:26:44.578Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/64/f07ce75bcb3539a15e8265c42d8bcedc348bb83fe92317847b0541458849/flwr-1.21.0-py3-none-any.whl", hash = "sha256:35aecdfcaea80efac0296c1d27ecd0a0427c8d5905deeada50c23438fec23555", size = 664179, upload-time = "2025-09-10T10:02:26.866Z" },
 ]
 
 [package.optional-dependencies]
@@ -2166,11 +2166,11 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "flwr", extras = ["simulation"], specifier = ">=1.22.0" },
+    { name = "flwr", extras = ["simulation"], specifier = ">=1.21.0" },
     { name = "flwr-datasets", extras = ["vision"], specifier = ">=0.5.0" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
-    { name = "syft-flwr", specifier = "==0.2.1" },
+    { name = "syft-flwr", specifier = "==0.4.0" },
     { name = "syft-flwr", specifier = ">=0.2.1" },
 ]
 
@@ -2246,7 +2246,7 @@ wheels = [
 
 [[package]]
 name = "syft-flwr"
-version = "0.2.1"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "flwr", extra = ["simulation"] },
@@ -2258,9 +2258,9 @@ dependencies = [
     { name = "tomli-w" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/32/82/4665b0ce869839eb4de8c88078cf92ce9b08929192f2f1a0dfda3b4d4138/syft_flwr-0.2.1.tar.gz", hash = "sha256:cc99d2020953a7195069baf2e0f8122666b22b5a4d3c942d872b9d7b0cdd1555", size = 22351, upload-time = "2025-08-29T09:50:43.132Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/0b/32088077d090de79bd44599cc8e9493df78865aef8a6221e1b423ea32204/syft_flwr-0.4.0.tar.gz", hash = "sha256:e984074e59e94d7dd2c1b5b542cd71292a2da9c0aa20ff2126280bed11d42f04", size = 22790, upload-time = "2025-10-08T05:56:34.331Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/06/e6432cd18fee26de97339e1e1bf04759aeaa82bf3df5850c6db94ce801f6/syft_flwr-0.2.1-py3-none-any.whl", hash = "sha256:200cc544e669db75419c12419b37aa063962f44dc0d3fe5fd6317b25705bc44a", size = 26946, upload-time = "2025-08-29T09:50:41.821Z" },
+    { url = "https://files.pythonhosted.org/packages/69/91/ad7a81299acc21861076553d0bdd7398a6ee237773a6ca2f9cd3a20e5b9e/syft_flwr-0.4.0-py3-none-any.whl", hash = "sha256:9169184d770de2754cb9940f71f2680aa0fb2ed6846f7b7aac89fce9a2fa89be", size = 27224, upload-time = "2025-10-08T05:56:33.579Z" },
 ]
 
 [[package]]
