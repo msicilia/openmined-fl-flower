@@ -18,6 +18,7 @@ try:
         name="synthetic-dataset",
         path=DATASET_PATH / "private",
         mock_path=DATASET_PATH / "mock",
+        # summary="A synthetic dataset for distributed FL experiments.",
         description_path=DATASET_PATH / "README.md",
     )
     dataset.describe()
