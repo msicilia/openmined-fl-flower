@@ -1,7 +1,7 @@
 import os
 import syft_rds as sy
 from pathlib import Path
-os.environ["SYFT_FLWR_MSG_TIMEOUT"] = "60"
+os.environ["SYFT_FLWR_MSG_TIMEOUT"] = "120"
 import argparse
 
 parser = argparse.ArgumentParser(description="Submit FL job to a DO (data owner)")
@@ -11,7 +11,7 @@ args = parser.parse_args()
 DO = args.do
 
 SYFTBOX_DATASET_NAME = "synthetic-dataset"
-client = sy.init_session(host=DO)
+client = sy.init_session(host=DO, start_rds_server=True)
 
 dataset = client.dataset.get(name=SYFTBOX_DATASET_NAME)
 

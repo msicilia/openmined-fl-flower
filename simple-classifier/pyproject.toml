@@ -50,7 +50,8 @@ insecure = true
 [tool.syft_flwr]
 app_name = "ds@openmined.org_simple-classifier_1760452818"
 datasites = [
-    "1@openmined.org",
-    "2@openmined.org",
+    "k9o3t7dyx@mozmail.com",
+    "jpvelasco@salud.madrid.org",
+
 ]
-aggregator = "ds@openmined.org"
+aggregator = "msicilia@gmail.com"
