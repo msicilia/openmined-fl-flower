@@ -41,7 +41,7 @@ num-partitions = 1
 default = "local-simulation"
 
 [tool.flwr.federations.local-simulation.options]
-num-supernodes = 10
+num-supernodes = 2
 
 [tool.flwr.federations.remote-federation]
 address = "<SUPERLINK-ADDRESS>:<PORT>"
